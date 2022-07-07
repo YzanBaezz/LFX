@@ -1,0 +1,16 @@
+{% extends 'core/PlantillaLogin.html' %}
+{% load static %}
+
+{% block a %}
+<link rel="stylesheet" type="text/css" href="{% static 'core/css/plantillaA.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'core/css/plantillaA1.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'core/css/plantillaF.css' %}">
+{% endblock %}
+{% block content %}
+    <main>
+        <div class="container">
+        <h1 class="centrado">Te has logeado.</h1>
+        <img class="imagen-fluid" src="{% static 'core/img/LOGO/hasta-pronto.jpg' %} " alt="">
+        </div>
+    </main>
+{% endblock %}
