@@ -368,11 +368,11 @@ h6{
 
 .text-box-1{
     display: block;
-    text-align: left;
-    margin: left;
+    text-align: center;
+    margin: 0px, 500px, 500px, 0px;
     font-size: 14px;
     box-sizing: border-box;
-    width: 60%;
+    
 }
 
 .info{

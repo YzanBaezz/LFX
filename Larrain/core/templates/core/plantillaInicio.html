@@ -43,16 +43,11 @@
       </li>
       {% if user.is_authenticated %}
         <li class="nav-item">
-          <li><a class="nav-link fondoletrasmenu" href="{% url 'logout' %}">Logout </a></li>
+          <li><a class="nav-link fondoletrasmenu" href="{% url 'logout' %}">Cerrar sesion </a></li>
         </li>
         <li class="nav-item">
           <li><a class="nav-link fondoletrasmenu" href="{% url 'index' %}">{{ user.username }} </a></li>
         </li>
-        {% if perms.app.add_producto %}
-          <li class="nav-item">
-            <li><a class="nav-link fondoletrasmenu" href="{% url 'index' %}">Gestion Autos </a></li>
-          </li>
-        {% endif %}
       {% else %}
       <li class="nav-item">
         <li><a class="nav-link fondoletrasmenu" href="{% url 'login' %}">Inicio Sesión </a></li>
