@@ -7,8 +7,7 @@ from .models import Producto
 
 # Create your views here.
 
-def index(request):
-    return render(request, 'core/index.html')
+
 
 def login(request):
 
@@ -38,6 +37,14 @@ def registro(request):
     contexto = {'form': form}
     return render(request, 'core/registro.html', contexto)
 
+def index(request):
+    Productos = Producto.objects.all()
+    numero = 2
+    contexto = {
+        "Productos" : Productos,
+        "numero" : numero ,
+    }
+    return render(request,'core/index.html',contexto)
 
 def logout(request):
 

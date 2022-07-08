@@ -11,6 +11,13 @@
 <h3>${{produc.precio}}</h3>
 {% endblock Precio %}
 
+{% block titulo %}
+  {{produc.nombre}}
+{% endblock %}
+
+{% block Nombre %}
+<h4>{{produc.nombre}}</h4>
+{% endblock Nombre %}
 
 {% block Imagen1 %}
 <img alt="Sin foto" class="thumbnail active" src="{{produc.foto.url}}">
