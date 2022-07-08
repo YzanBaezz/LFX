@@ -1,7 +1,7 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,11 +43,7 @@
         <li class="nav-item">
           <li><a class="nav-link fondoletrasmenu" href="{% url 'index' %}">{{ user.username }} </a></li>
         </li>
-        {% if perms.app.add_producto %}
-          <li class="nav-item">
-            <li><a class="nav-link fondoletrasmenu" href="{% url 'index' %}">Gestion Autos </a></li>
-          </li>
-        {% endif %}
+        
       {% else %}
       <li class="nav-item">
         <li><a class="nav-link fondoletrasmenu" href="{% url 'login' %}">Inicio Sesión </a></li>
@@ -75,5 +71,7 @@
 
 {% endblock %}
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>

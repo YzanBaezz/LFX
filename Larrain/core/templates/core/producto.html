@@ -1,0 +1,30 @@
+{% extends 'core/plantillaProducto.html' %}
+{% load static %}
+
+
+{% block Imagen %}
+<img alt="Sin foto" class="main_img" src="{{produc.foto.url}}">
+{% endblock Imagen %}
+
+
+{% block Precio %}
+<h3>${{produc.precio}}</h3>
+{% endblock Precio %}
+
+
+{% block Imagen1 %}
+<img alt="Sin foto" class="thumbnail active" src="{{produc.foto.url}}">
+<img alt="Sin foto" class="thumbnail" src="{{produc.imagen1.url}}">
+<img alt="Sin foto" class="thumbnail" src="{{produc.imagen2.url}}">
+<img alt="Sin foto" class="thumbnail" src="{{produc.imagen3.url}}">
+{% endblock Imagen1%}
+
+
+{% block Info1 %}
+<li>{{produc.garantia}}</li>
+{% endblock Info1 %}
+
+
+{% block Descripcion %}
+<p>{{produc.descripcion}}</p>
+{% endblock Descripcion %}
