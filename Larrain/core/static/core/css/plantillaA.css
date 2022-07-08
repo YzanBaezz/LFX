@@ -1,11 +1,11 @@
 body{
-	background: rgba(154, 150, 150, 0.729);
+	background: #fff;
 	font-family: 'Varela Round', Helvetica, Arial, serif;
 }
 
 main {
 
-    background: #7a876a;
+    background: #c56c1e ;
     max-width: 800px;
     width: 90%;
     margin: auto;

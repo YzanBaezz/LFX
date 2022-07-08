@@ -124,18 +124,6 @@ section{
   }
 }
 
-.header{
-  background: $white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding:2rem 9%;
-  box-shadow: $box-shadow;
-  position: fixed;
-  top:0; left:0; right:0;
-  z-index: 1000;
-  transform: translateY(-10rem);
-
   &.active{    
     transform: translateY(0rem);
   }
@@ -239,7 +227,7 @@ section{
       }
     }
   }
-}
+
 
 #menu-btn{
   display: none;
