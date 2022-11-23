@@ -23,12 +23,12 @@
 }
 .head{
     background: rgba(156, 154, 154, 0.233);
-    height: 8%;
+    height: 10%;
     box-shadow: 0 2rem 3rem hsla(202, 45%, 45%, 0.205);
 }
 h1.nomserv{
     text-align: center;
-    color: 1px;
+    color: white;
 }
 
 
@@ -48,12 +48,13 @@ h1.nomserv{
     margin: auto;
   }
 .letra{
+    color: white;
     margin-top: 20px;
     padding: 10px;
     --shadow-pos: ;
     --shadow-grow: 5px;
     --accent: #ffffff;
-    --highlight: #2e2c2d;
+    --highlight: #fffb00;
     font-variant-numeric: tabular-nums;
     border: 2px solid var(--accent);
     box-shadow: 0 0 0 var(--shadow-grow) var(--highlight) var(--shadow-pos);  	
@@ -113,45 +114,45 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #22c9e6;
-  border-radius: 5rem;
+    background: #22c9e6;
+    border-radius: 5rem;
 }
 
 .fondoletrasmenu{
-  color: #fff !important;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: medium;
+    color: #fff !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
 }
 
 section {
-  padding: 5rem 9%;
+    padding: 5rem 9%;
 }
 
 .heading {
-  padding-bottom: 2rem;
-  text-align: center;
-  font-size: 3.5rem;
-  color: #130f40;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #130f40;
 }
 
 .heading span {
-  color: #22c9e6;
+    color: #22c9e6;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: .8rem 2.8rem;
-  border-radius: 5rem;
-  border-top-left-radius: 0;
-  border: 0.2rem solid #130f40;
-  cursor: pointer;
-  background: none;
-  color: #130f40;
-  font-size: 1.7rem;
-  overflow: hidden;
-  z-index: 0;
-  position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 2.8rem;
+    border-radius: 5rem;
+    border-top-left-radius: 0;
+    border: 0.2rem solid #130f40;
+    cursor: pointer;
+    background: none;
+    color: #130f40;
+    font-size: 1.7rem;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
 }
 
 .btn::before {
@@ -822,7 +823,7 @@ section {
     z-index: 5;
     transition: .7s;
     border-radius: 15px;
-    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(77, 76, 76));
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
 /*       background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     background-size: 400%;
     animation: gradient 15s ease infinite;
@@ -832,6 +833,7 @@ section {
     grid-row-gap: 20px;
     justify-content: center;
     align-content: center;
+    padding-bottom: 200px;
   }
 
 .div:hover {

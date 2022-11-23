@@ -56,9 +56,16 @@
         </div>
         {% endfor %}
     </div>
+    {% if user.is_authenticated %}
     <div class="data-container">
 
-        <a href="{% url 'index' %}"><span class="btn">Pedir Servicio</span></a>
+        <a href="{% url 'RegistroHora' %}"><span class="btn">Pedir Servicio</span></a>
     </div>
+    {% else %}
+    <div class="data-container">
+
+        <a href="{% url 'registro' %}"><span class="btn">Pedir Servicio</span></a>
+    </div>
+    {% endif %}
 </section>
 {% endblock section %}
