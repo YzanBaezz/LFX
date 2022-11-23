@@ -1,0 +1,64 @@
+{% extends 'core/plantillaServicio.html' %}
+{ %block head %}
+
+{ %endblock head %}
+    
+{% block section %}
+<section class="shop" id="shop">
+    
+    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+    <div class="servicios">
+        <div class="div">
+            <div class="div-shadow"></div>
+            <div class="head">
+                <h1 class="nomserv">Servicios</h1>
+            </div>
+            <div class="margen">
+                <div class="cuerpo">
+                    {% for c in Servicios %}
+                    <li class="letra">{{c.nombre}}</li>
+                    
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <div class="div-shadow"></div>
+            <div class="head">
+                <h1 class="nomserv">Productos</h1>
+            </div>
+            <div class="margen">
+                <div class="cuerpo">
+                    {% for c in Productos %}
+                    <li class="letra">{{c.nombre}}</li>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="container">
+        {% for c in Servicios %}
+		<div class="threeholder">
+			<div class="threeone">
+
+				<div class="circleborder">
+					<img src="{{ c.foto.url }}" alt="">
+                    <div class="titulo">
+                        <h4>{{c.nombre}}</h4>
+                    </div>
+					<div class="texto">
+                        <p>{{c.descripcion}}</p>
+                    </div>
+				</div>
+			</div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="data-container">
+
+        <a href="{% url 'index' %}"><span class="btn">Pedir Servicio</span></a>
+    </div>
+</section>
+{% endblock section %}

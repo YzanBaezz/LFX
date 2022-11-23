@@ -3,7 +3,7 @@ from . import views
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib import messages
 from .forms import UserRegisterForm
-from .models import Producto
+from .models import Producto,Servicio
 
 # Create your views here.
 
@@ -12,6 +12,18 @@ from .models import Producto
 def login(request):
 
     return render(request, 'core/login.html')
+
+def RegistroHora(request):
+    return render(request, 'core/RegistroHora.html')
+
+def Servicios(request):
+    Productos = Producto.objects.all()
+    Servicios = Servicio.objects.all()
+    contexto = {
+        "Productos" : Productos,
+        "Servicios" : Servicios
+    }
+    return render(request, 'core/Servicios.html',contexto)
 
 def producto(request):
     return render(request, 'core/producto.html')
