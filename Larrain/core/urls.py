@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import index, registro,producto,RegistroHora,Servicios
+from .views import index, registro,producto,RegistroHora,Servicios,RegistrarHora
 from django.contrib.auth.views import LoginView, LogoutView
 
 urlpatterns = [
@@ -13,6 +13,7 @@ urlpatterns = [
     path('producto/<codigo>', producto, name="producto"),
     path('RegistroHora/', RegistroHora, name="RegistroHora"),
     path('Servicios/', Servicios, name="Servicios"),
+    path('RegistrarHora/', RegistrarHora, name="RegistrarHora"),
 
 ]
 

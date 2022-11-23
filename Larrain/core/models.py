@@ -27,3 +27,16 @@ class Servicio(models.Model):
     def __str__(self):
         return f'{self.nombre} -> {self.precio}'
 
+
+class Hora(models.Model):
+    codigo = models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=50)
+    apellido = models.CharField(max_length=50)
+    email = models.CharField(max_length=50)
+    numero = models.PositiveBigIntegerField(null=True)
+    marca = models.TextField(null=True)
+    patente = models.CharField(max_length=50)
+    fecha = models.CharField(max_length=50)
+    aceptada = models.BooleanField(null=True)
+    def __str__(self):
+        return f'{self.nombre} -> {self.fecha}'
